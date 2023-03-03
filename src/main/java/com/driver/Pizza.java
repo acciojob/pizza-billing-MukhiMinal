@@ -21,7 +21,7 @@ public class Pizza {
             this.price=400;
             this.toppings=120;
         }
-       this.bill="Base Price Of The Pizza:"+this.price;
+       this.bill="Base Price Of The Pizza: "+this.price+"\n";
         // your code goes here
     }
 
@@ -56,12 +56,13 @@ public class Pizza {
                 this.bill += "Extra Cheese Added: 80" + "\n";
             }
             if (isExtraToppingAdded) {
-                this.bill += "Extra Toppings Added:";
+                this.bill += "Extra Toppings Added: "+"\n";
             }
             if (isTakeAway) {
-                this.bill += "Paperbag Added: 20" + "\n";
+                this.bill += "Paperbag Added: 20" +"\n";
             }
-            this.bill += "Total Price:" + this.price;
+            this.bill += "Total Price: " +this.price;
+            this.isBillCreated=true;
             // your code goes here
             return this.bill;
         }
